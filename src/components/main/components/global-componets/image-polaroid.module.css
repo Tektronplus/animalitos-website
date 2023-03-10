@@ -1,0 +1,34 @@
+@import "/src/variables.css";
+
+.main_container {
+	--width-image: 300px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	width: var(--width-image);
+	padding: 20px;
+	border: 1px solid black;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+}
+
+.container_photo {
+	height: 225px;
+	width: var(--width-image);
+	background-size: cover;
+}
+
+.container_name {
+	height: 50px;
+	width: var(--width-image);
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.dog_name {
+	color: var(--primary-color);
+	font-size: var(--font-size-l);
+}

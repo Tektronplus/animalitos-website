@@ -1,6 +1,13 @@
 :root {
+	/* size */
 	--primary-color: #018e8e;
 	--secondary-color: #d8c3fe;
 	--tertiary-color: #cccec1;
 	--quaternary-color: #ede7cc;
+
+	--font-size-xl: 48px;
+	--font-size-l: 36px;
+	--font-size-m: 32px;
+	--font-size-s: 21px;
+	--font-size-xs: 16px;
 }

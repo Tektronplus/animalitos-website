@@ -1,0 +1,9 @@
+@import "/src/variables.css";
+
+.container {
+	background-color: var(--primary-color);
+}
+
+.text {
+	color: red;
+}
