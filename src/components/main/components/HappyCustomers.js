@@ -7,6 +7,13 @@ const HappyCustomers = () => {
 				url={"/images/happycustomer-01.jpeg"}
 				dogName={"Puppy"}
 			/>
+		</div>
+	);
+};
+
+export default HappyCustomers;
+
+/* 
 			<ImagePolaroid
 				url={"/images/happycustomer-02.jpeg"}
 				dogName={"Fuffi"}
@@ -23,9 +30,4 @@ const HappyCustomers = () => {
 				url={"/images/happycustomer-05.jpeg"}
 				dogName={"Birba"}
 			/>
-			<p>Image</p>
-		</div>
-	);
-};
-
-export default HappyCustomers;
+*/

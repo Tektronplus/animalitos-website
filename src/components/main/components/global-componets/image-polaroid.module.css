@@ -8,6 +8,7 @@
 	align-items: center;
 	justify-content: center;
 
+	background-color: #ffffff;
 	width: var(--width-image);
 	padding: 20px;
 	border: 1px solid black;

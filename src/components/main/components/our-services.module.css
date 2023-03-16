@@ -6,27 +6,15 @@
 	justify-content: center;
 }
 
-.text_border {
-	text-shadow: 0.1px 0.1px 0px #000, -0.1px -0.1px 0px #000;
-}
-
 .container {
 	background-color: var(--primary-color);
 
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
 	grid-template-areas:
-		"slogan title"
-		"slogan description"
-		"slogan call_out";
-}
-
-.slogan {
-	grid-area: slogan;
-
-	color: var(--secondary-color);
-	font-size: var(--font-size-xl);
+		"title photo"
+		"description photo";
 }
 
 .title {
@@ -43,6 +31,6 @@
 	font-size: var(--font-size-s);
 }
 
-.call_out {
-	grid-area: call_out;
+.photo {
+	grid-area: photo;
 }
