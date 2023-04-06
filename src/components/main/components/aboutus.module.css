@@ -11,8 +11,6 @@
 }
 
 .container {
-	background-color: var(--primary-color);
-
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 1fr 1fr 1fr;
@@ -45,4 +43,17 @@
 
 .call_out {
 	grid-area: call_out;
+}
+
+@media (max-width: 768px) {
+	.container {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr;
+		grid-template-areas:
+			"slogan"
+			"title"
+			"description"
+			"call_out";
+	}
 }

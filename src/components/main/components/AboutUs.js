@@ -1,4 +1,4 @@
-import styles from "./about-us.module.css";
+import styles from "./aboutus.module.css";
 import ButtonCta from "./global-componets/ButtonCta";
 
 const AboutUs = () => {

@@ -1,4 +1,4 @@
-import styles from "./our-services.module.css";
+import styles from "./ourservices.module.css";
 import ImagePolaroid from "./global-componets/ImagePolaroid";
 
 const OurServices = () => {

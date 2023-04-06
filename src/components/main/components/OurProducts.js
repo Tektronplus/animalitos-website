@@ -1,5 +1,5 @@
 import ImagePolaroid from "./global-componets/ImagePolaroid";
-import styles from "./our-products.module.css";
+import styles from "./ourproducts.module.css";
 
 const OurProducts = () => {
 	return (

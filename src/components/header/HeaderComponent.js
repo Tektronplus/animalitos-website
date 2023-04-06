@@ -1,10 +1,11 @@
+import BarMenu from "./components/BarMenu";
 
 const HeaderComponent = () => {
-    return(
-        <div>
-            Header Component
-        </div>
-    );
-}
+	return (
+		<div>
+			<BarMenu />
+		</div>
+	);
+};
 
 export default HeaderComponent;

@@ -1,0 +1,21 @@
+@import "/src/variables.css";
+
+.container {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 50px 25px;
+	grid-template-areas: "animalitos" "toelettatura";
+}
+
+.title_one {
+	grid-area: animalitos;
+	color: var(--primary-color);
+	font-size: var(--font-size-xl);
+}
+
+.title_two {
+	grid-area: toelettatura;
+	color: var(--primary-color);
+	font-size: var(--font-size-s);
+	text-align: center;
+}

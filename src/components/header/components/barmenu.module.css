@@ -1,0 +1,26 @@
+@import "/src/variables.css";
+
+.container {
+	height: 75px;
+	background-color: var(--white-color);
+
+	display: grid;
+	grid-template-columns: 75px 225px 1fr;
+	grid-template-rows: 1fr;
+	grid-template-areas:
+		"logo"
+		"title"
+		"links";
+}
+
+.logo {
+	grid-area: logo;
+}
+
+.title {
+	grid-area: name;
+}
+
+.menu {
+	grid-area: links;
+}

@@ -7,8 +7,6 @@
 }
 
 .container {
-	background-color: var(--primary-color);
-
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 1fr 1fr;
@@ -33,4 +31,16 @@
 
 .photo {
 	grid-area: photo;
+}
+
+@media (max-width: 768px) {
+	.container {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+		grid-template-areas:
+			"title"
+			"description"
+			"photo";
+	}
 }
