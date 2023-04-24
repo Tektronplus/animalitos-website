@@ -11,9 +11,11 @@
 }
 
 .container {
+	--padding: 20px;
+
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr 1fr 1fr;
+	grid-template-rows: 50px 1fr 90px;
 	grid-template-areas:
 		"slogan title"
 		"slogan description"
@@ -22,6 +24,7 @@
 
 .slogan {
 	grid-area: slogan;
+	padding: var(--padding);
 
 	color: var(--secondary-color);
 	font-size: var(--font-size-xl);
@@ -29,6 +32,7 @@
 
 .title {
 	grid-area: title;
+	padding: var(--padding);
 
 	color: var(--white-color);
 	font-size: var(--font-size-l);
@@ -36,6 +40,7 @@
 
 .description {
 	grid-area: description;
+	padding: var(--padding);
 
 	color: var(--white-color);
 	font-size: var(--font-size-s);
@@ -49,11 +54,15 @@
 	.container {
 		display: grid;
 		grid-template-columns: 1fr;
-		grid-template-rows: 1fr 1fr 1fr 1fr;
+		grid-template-rows: auto 50px 1fr 100px;
 		grid-template-areas:
 			"slogan"
 			"title"
 			"description"
 			"call_out";
+	}
+
+	.slogan {
+		font-size: var(--font-size-l);
 	}
 }

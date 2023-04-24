@@ -3,6 +3,11 @@ import styles from "./barmenuitems.module.css";
 
 const BarMenuItems = () => {
 	const [isHamburgerEnable, setIsHamburgerEnable] = useState(false);
+
+	const scrollToSection = (anchor) => {
+		window.location.href = `#${anchor}`;
+	};
+
 	return (
 		<div className={styles.main_container}>
 			<div
@@ -11,7 +16,9 @@ const BarMenuItems = () => {
 				}`}>
 				<a href="#/">Su di noi</a>
 				<a href="#/"> I nostri servizi</a>
-				<a href="#/"> I nostri prodotti</a>
+				<a onClick={() => scrollToSection("our-products-section")}>
+					I nostri prodotti
+				</a>
 				<a href="#/"> I nostri servizi</a>
 			</div>
 			<button

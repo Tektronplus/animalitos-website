@@ -7,7 +7,9 @@
 }
 
 .container {
+	--padding: 20px;
 	display: grid;
+
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 1fr 1fr;
 	grid-template-areas:
@@ -17,6 +19,7 @@
 
 .title {
 	grid-area: title;
+	padding: var(--padding);
 
 	color: var(--white-color);
 	font-size: var(--font-size-l);
@@ -24,6 +27,7 @@
 
 .description {
 	grid-area: description;
+	padding: var(--padding);
 
 	color: var(--white-color);
 	font-size: var(--font-size-s);
@@ -37,10 +41,16 @@
 	.container {
 		display: grid;
 		grid-template-columns: 1fr;
-		grid-template-rows: 1fr 1fr 1fr;
+		grid-template-rows: 50px 1fr 350px;
 		grid-template-areas:
 			"title"
 			"description"
 			"photo";
+	}
+
+	.photo {
+		padding: 200px 0px;
+
+		background-color: var(--quaternary-color);
 	}
 }

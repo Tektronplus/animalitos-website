@@ -3,7 +3,9 @@ import styles from "./ourproducts.module.css";
 
 const OurProducts = () => {
 	return (
-		<div className={styles.container}>
+		<div
+			id="our-products-section"
+			className={styles.container}>
 			<div className={`${styles.title} ${styles.flex}`}>I Nostri Prodotti</div>
 			<div className={`${styles.description} ${styles.flex}`}>
 				Siamo anche appassionati di sostenibilità e dell'ambiente. Per questo
