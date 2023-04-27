@@ -3,7 +3,9 @@ import ButtonCta from "./global-componets/ButtonCta";
 
 const AboutUs = () => {
 	return (
-		<div className={styles.container}>
+		<div
+			id="about-us-section"
+			className={styles.container}>
 			<div className={`${styles.slogan} ${styles.flex} ${styles.text_border}`}>
 				"Dal pelo alla coda, noi ci prendiamo cura del tuo cane"
 			</div>

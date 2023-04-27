@@ -3,7 +3,9 @@ import ImagePolaroid from "./global-componets/ImagePolaroid";
 
 const HappyCustomers = () => {
 	return (
-		<div className={styles.container}>
+		<div
+			id="happy-customer-section"
+			className={styles.container}>
 			{jsonData.map((dogPhoto) => (
 				<ImagePolaroid
 					className={styles.photo}

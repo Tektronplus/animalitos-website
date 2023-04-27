@@ -3,7 +3,9 @@ import ImagePolaroid from "./global-componets/ImagePolaroid";
 
 const OurServices = () => {
 	return (
-		<div className={styles.container}>
+		<div
+			id="our-services-section"
+			className={styles.container}>
 			<div className={`${styles.title} ${styles.flex}`}>I Nostri Servizi</div>
 			<div className={`${styles.description} ${styles.flex}`}>
 				Il nostro personale altamente qualificato e appassionato lavora con ogni

@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import { useState } from "react";
 import styles from "./barmenuitems.module.css";
 
@@ -14,12 +15,16 @@ const BarMenuItems = () => {
 				className={`${isHamburgerEnable ? "" : styles.hamburger_disable} ${
 					styles.container_links
 				}`}>
-				<a href="#/">Su di noi</a>
-				<a href="#/"> I nostri servizi</a>
+				<a onClick={() => scrollToSection("about-us-section")}>Su di noi</a>
+				<a onClick={() => scrollToSection("our-services-section")}>
+					I nostri servizi
+				</a>
 				<a onClick={() => scrollToSection("our-products-section")}>
 					I nostri prodotti
 				</a>
-				<a href="#/"> I nostri servizi</a>
+				<a onClick={() => scrollToSection("happy-customer-section")}>
+					Clienti felici
+				</a>
 			</div>
 			<button
 				onClick={() => setIsHamburgerEnable(!isHamburgerEnable)}
